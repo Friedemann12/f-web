@@ -26,7 +26,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">?????</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">f-web</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -190,10 +190,10 @@
         <!-- About Section Content -->
         <div class="row">
             <div class="col-lg-4 ml-auto">
-                <p class="lead">My Name is Julian Friedemann and im <?php
+                <p class="lead">My Name is Julian Friedemann and I'm <?php
                     $time = time();
                     $age = ($time - 863442000) / 31536000;
-                    echo floor($age) ?> year old. </p>
+                    echo floor($age) ?> years old. </p>
             </div>
             <div class="col-lg-4 mr-auto">
                 <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers,
