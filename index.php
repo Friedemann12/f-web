@@ -193,7 +193,7 @@
                 <p class="lead">My Name is Julian Friedemann and im <?php
                     $time = time();
                     $age = ($time - 863442000) / 31536000;
-                    echo $age?>year old. </p>
+                    echo floor($age) ?> year old. </p>
             </div>
             <div class="col-lg-4 mr-auto">
                 <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers,
