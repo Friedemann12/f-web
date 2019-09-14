@@ -19,9 +19,6 @@
     <!-- Theme CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
 
-<!-- Favicon -->
-
-<link rel="shortcut icon" type="image/x-icon" href="img/favicon-32x32.png">
 
 </head>
 
@@ -30,7 +27,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logoo.png" height="60"></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">f-web</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
