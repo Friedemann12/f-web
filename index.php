@@ -93,7 +93,7 @@
                             <i class="fas fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+                    <img class="img-fluid" src="img/portfolio/b-i-a.png" alt="">
                 </div>
             </div>
 
@@ -326,17 +326,22 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Build in Amsterdam
+                                Imitation</h2>
                             <!-- Icon Divider -->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-                            <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
+                            <a href="subpages/bha-imitation/test-1.0/public/index.html" target="_blank"><img
+                                        class="img-fluid rounded mb-5" src="img/portfolio/b-i-a.png" alt=""></a>
                             <!-- Portfolio Modal - Text -->
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <p class="mb-5">An amazing Page by the Folks of Build in Amsterdam,
+                                a branding agency specialised in e-commerce. I tried to imitate the
+                                side-scrolling-effect and some of their cool features seen on their site! Made with
+                                Javascript, Vue and CSS. Check-out the <a href="https://www.buildinamsterdam.com/cases"
+                                                                          target="_blank">original</a>
+                            </p>
                             <button class="btn btn-primary" href="#" data-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
                                 Close Window
