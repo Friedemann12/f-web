@@ -1,0 +1,65 @@
+.images {
+  height: 100%;
+  width: 31%;
+  display: inline-block;
+
+  #items {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .casetext {
+    position: relative;
+    width: 75%;
+    left: 3%;
+    top: 67%;
+    white-space: initial;
+    text-align: left;
+    color: white;
+    max-height: 300px;
+    cursor: pointer;
+    .case {
+      font-size: 55px;
+      font-weight: bolder;
+    }
+    .hovertext {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .brand {
+      padding-top: 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+.fade-enter-active {
+  transform-origin: center top;
+  animation: shrinkIn 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.fade-leave-active {
+  transform-origin: center top;
+  animation: shrinkOut 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+@keyframes shrinkOut {
+  0% {
+    transform: scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    transform: scaleY(0);
+    max-height: 0;
+  }
+}
+@keyframes shrinkIn {
+  0% {
+    transform: scaleY(0);
+    max-height: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    max-height: 100px;
+  }
+}
