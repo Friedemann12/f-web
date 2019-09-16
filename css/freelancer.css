@@ -61,10 +61,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
     margin: 0;
-    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
+    font-family: "Teko", -apple-system, BlinkMacSystemFont, "Teko", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5rem;
     font-weight: 200;
-    line-height: 1.5;
+    line-height: 1.25em;
     color: #212529;
     text-align: left;
     background-color: #fff;
@@ -371,7 +371,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Teko", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
     line-height: 1.2;
 }
@@ -7306,7 +7306,7 @@ button.bg-dark:focus {
     border-color: #fff !important;
 }
 
-.rounded-sm {
+/*.rounded-sm {
     border-radius: 0.25rem !important;
 }
 
@@ -7348,7 +7348,7 @@ button.bg-dark:focus {
 
 .rounded-0 {
     border-radius: 0 !important;
-}
+}*/
 
 .clearfix::after {
     display: block;
@@ -10368,22 +10368,22 @@ button.bg-dark:focus {
 
     .pt-lg-3,
     .py-lg-3 {
-        padding-top: 1rem !important;
+        padding-top: .5rem !important;
     }
 
     .pr-lg-3,
     .px-lg-3 {
-        padding-right: 1rem !important;
+        padding-right: 1.5rem !important;
     }
 
     .pb-lg-3,
     .py-lg-3 {
-        padding-bottom: 1rem !important;
+        padding-bottom: .5rem !important;
     }
 
     .pl-lg-3,
     .px-lg-3 {
-        padding-left: 1rem !important;
+        padding-left: 1.5rem !important;
     }
 
     .p-lg-4 {
@@ -11445,7 +11445,7 @@ a.text-dark:hover, a.text-dark:focus {
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Teko", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
 }
 
