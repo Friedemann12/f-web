@@ -333,7 +333,7 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-                            <a href="potfolio/01-bha-imitation/index.html" target="_blank"><img
+                            <a href="portfolio/01-bha-imitation/index.html" target="_blank"><img
                                         class="img-fluid rounded mb-5" src="img/portfolio/b-i-a.png" alt=""></a>
                             <!-- Portfolio Modal - Text -->
                             <p class="mb-5">An amazing Page by the Folks of <a
