@@ -333,10 +333,12 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-                            <a href="subpages/bha-imitation/test-1.0/public/index.html" target="_blank"><img
+                            <a href="subpages/bha-imitation/dist/index.html" target="_blank"><img
                                         class="img-fluid rounded mb-5" src="img/portfolio/b-i-a.png" alt=""></a>
                             <!-- Portfolio Modal - Text -->
-                            <p class="mb-5">An amazing Page by the Folks of Build in Amsterdam,
+                            <p class="mb-5">An amazing Page by the Folks of <a
+                                        href="https://www.buildinamsterdam.com/cases"
+                                        target="_blank">Build in Amsterdam</a>,
                                 a branding agency specialised in e-commerce. I tried to imitate the
                                 side-scrolling-effect and some of their cool features seen on their site! Made with
                                 Javascript, Vue and CSS. Check-out the <a href="https://www.buildinamsterdam.com/cases"

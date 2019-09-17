@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/subpages/bha-imitation" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/subpages/bha-imitation/test-1.0" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/subpages/bha-immitation/test-1.0" vcs="Git" />
   </component>
