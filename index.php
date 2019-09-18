@@ -270,17 +270,14 @@
             <!-- Footer Social Icons -->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Around the Web</h4>
-                <a class="btn btn-outline-light btn-social mx-1" href="#">
-                    <i class="fab fa-fw fa-facebook-f"></i>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Friedemann12">
+                    <i class="fab fa-fw fa-github"></i>
                 </a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#">
-                    <i class="fab fa-fw fa-twitter"></i>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.xing.com/profile/Julian_Friedemann/cv">
+                    <i class="fab fa-fw fa-xing"></i>
                 </a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#">
+                <a class="btn btn-outline-light btn-social mx-1" href="www.linkedin.com/in/julian-friedemann">
                     <i class="fab fa-fw fa-linkedin-in"></i>
-                </a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#">
-                    <i class="fab fa-fw fa-dribbble"></i>
                 </a>
             </div>
 
@@ -298,7 +295,7 @@
 <!-- Copyright Section -->
 <section class="copyright py-4 text-center text-white">
     <div class="container">
-        <small>Copyright &copy; Your Website 2019</small>
+        <small>Julian Friedemann - Portfolio</small>
     </div>
 </section>
 
