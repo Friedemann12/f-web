@@ -12,7 +12,7 @@
 
     <!-- Custom fonts for this theme -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Jura:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- Theme CSS -->
@@ -181,20 +181,16 @@
                 <p class="lead">My Name is Julian Friedemann and I'm <?php
                     $time = time();
                     $age = ($time - 863442000) / 31536000;
-                    echo floor($age) ?> years old. </p>
+                    echo floor($age) ?> years old and since 2019 I'm studying Applied Computer Science at the Hamburg
+                    University of
+                    Applied Science. Thanks to a cooperative study program, I am also working as a Web-Developer for
+                    deepblue networks. </p>
             </div>
             <div class="col-lg-4 mr-auto">
-                <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers,
-                    and add your email address to the contact form to make it fully functional!</p>
+                <p class="lead">On this page you can see my
+                    progress as a Developer. In the portfolio section, I want to display all my achievements and
+                    milestones, while hopefully becoming a more and more advanced developer and programmer.</p>
             </div>
-        </div>
-
-        <!-- About Section Button -->
-        <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-                <i class="fas fa-download mr-2"></i>
-                Free Download!
-            </a>
         </div>
 
     </div>
@@ -263,8 +259,8 @@
             <!-- Footer Location -->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Location</h4>
-                <p class="lead mb-0">2215 John Daniel Drive
-                    <br>Clark, MO 65243</p>
+                <p class="lead mb-0">Hamburg
+                    <br>20255, Germany</p>
             </div>
 
             <!-- Footer Social Icons -->
@@ -285,8 +281,9 @@
 
             <!-- Footer About Text -->
             <div class="col-lg-4">
-                <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
+                <h4 class="text-uppercase mb-4">About This Page</h4>
+                <p class="lead mb-0">This Page was inspired by and created with Bootstrap. Freelance is a free
+                    to use, MIT licensed Bootstrap theme created by
                     <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
             </div>
 
@@ -358,7 +355,7 @@
     </div>
 </div>
 
-<!-- Portfolio Modal 2 -->
+<!-- Portfolio Modal 2
 <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
      aria-labelledby="portfolioModal2Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
@@ -372,15 +369,15 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title -->
+    Portfolio Modal - Title
                             <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                            <!-- Icon Divider -->
+     Icon Divider
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
                             </div>
-                            <!-- Portfolio Modal - Image -->
+                            <Portfolio Modal - Image
                             <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
-                            <!-- Portfolio Modal - Text -->
+    Portfolio Modal - Text
                             <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
                                 assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
                                 asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
@@ -396,157 +393,7 @@
     </div>
 </div>
 
-<!-- Portfolio Modal 3 -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
-     aria-labelledby="portfolioModal3Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-            </button>
-            <div class="modal-body text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                            <!-- Icon Divider -->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image -->
-                            <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
-                            <!-- Portfolio Modal - Text -->
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                            <button class="btn btn-primary" href="#" data-dismiss="modal">
-                                <i class="fas fa-times fa-fw"></i>
-                                Close Window
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 4 -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
-     aria-labelledby="portfolioModal4Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-            </button>
-            <div class="modal-body text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                            <!-- Icon Divider -->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div
-                            </div>
-                            <!-- Portfolio Modal - Image -->
-                            <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
-                            <!-- Portfolio Modal - Text -->
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                            <button class="btn btn-primary" href="#" data-dismiss="modal">
-                                <i class="fas fa-times fa-fw"></i>
-                                Close Window
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 5 -->
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
-     aria-labelledby="portfolioModal5Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-            </button>
-            <div class="modal-body text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                            <!-- Icon Divider -->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image -->
-                            <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
-                            <!-- Portfolio Modal - Text -->
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                            <button class="btn btn-primary" href="#" data-dismiss="modal">
-                                <i class="fas fa-times fa-fw"></i>
-                                Close Window
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 6 -->
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
-     aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-            </button>
-            <div class="modal-body text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                            <!-- Icon Divider -->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image -->
-                            <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
-                            <!-- Portfolio Modal - Text -->
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                            <button class="btn btn-primary" href="#" data-dismiss="modal">
-                                <i class="fas fa-times fa-fw"></i>
-                                Close Window
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+-->
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
