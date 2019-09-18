@@ -212,7 +212,8 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                <form name="email-form" id="contactForm" novalidate="novalidate" method="post"
+                      action="mail/contact_me.php">
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Name</label>
@@ -242,7 +243,8 @@
                     <br>
                     <div id="success"></div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                        <button type="submit" name="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send
+                        </button>
                     </div>
                 </form>
             </div>
