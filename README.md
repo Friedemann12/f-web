@@ -11,5 +11,3 @@ To begin using this template, choose one of the following options to get started
 ### Copyright and License
 
 Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
-
-### Test
