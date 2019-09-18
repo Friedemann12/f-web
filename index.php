@@ -333,25 +333,24 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-<<<<<<< HEAD
                             <a href="http://friedemann-web.de/portfolio/01-bha-imitation" target="_blank"><img
-=======
-                            <a href="https://portfolio.friedemann-web.de" target="_blank"><img
->>>>>>> 2f7a344b33a44868d8166699f710a66750066d7d
-                                        class="img-fluid rounded mb-5" src="img/portfolio/b-i-a.png" alt=""></a>
-                            <!-- Portfolio Modal - Text -->
-                            <p class="mb-5">An amazing Page by the Folks of <a
-                                        href="https://www.buildinamsterdam.com/cases"
-                                        target="_blank">Build in Amsterdam</a>,
-                                a branding agency specialised in e-commerce. I tried to imitate the
-                                side-scrolling-effect and some of their cool features seen on their site! Made with
-                                Javascript, Vue and CSS. All picture are free Stock-images from <a href="https://unsplash.com/">unplash</a>. Check-out the <a href="https://www.buildinamsterdam.com/cases"
-                                                                          target="_blank">original</a>.
-                            </p>
-                            <button class="btn btn-primary" href="#" data-dismiss="modal">
-                                <i class="fas fa-times fa-fw"></i>
-                                Close Window
-                            </button>
+                                <a href="https://portfolio.friedemann-web.de" target="_blank"><img
+                                            class="img-fluid rounded mb-5" src="img/portfolio/b-i-a.png" alt=""></a>
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5">An amazing Page by the Folks of <a
+                                            href="https://www.buildinamsterdam.com/cases"
+                                            target="_blank">Build in Amsterdam</a>,
+                                    a branding agency specialised in e-commerce. I tried to imitate the
+                                    side-scrolling-effect and some of their cool features seen on their site! Made with
+                                    Javascript, Vue and CSS. All picture are free Stock-images from <a
+                                            href="https://unsplash.com/">unplash</a>. Check-out the <a
+                                            href="https://www.buildinamsterdam.com/cases"
+                                            target="_blank">original</a>.
+                                </p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
                         </div>
                     </div>
                 </div>
