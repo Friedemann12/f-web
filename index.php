@@ -270,14 +270,14 @@
             <!-- Footer Social Icons -->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Around the Web</h4>
-                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Friedemann12">
+                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Friedemann12" target="_blank">
                     <i class="fab fa-fw fa-github"></i>
                 </a>
                 <a class="btn btn-outline-light btn-social mx-1" href="https://www.xing.com/profile/Julian_Friedemann"
                    target="_blank">
                     <i class="fab fa-fw fa-xing"></i>
                 </a>
-                <a class="btn btn-outline-light btn-social mx-1" href="www.linkedin.com/in/julian-friedemann"
+                <a class="btn btn-outline-light btn-social mx-1" href="https://linkedin.com/in/julian-friedemann"
                    target="_blank">
                     <i class="fab fa-fw fa-linkedin-in"></i>
                 </a>
