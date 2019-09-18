@@ -333,7 +333,11 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
+<<<<<<< HEAD
                             <a href="http://friedemann-web.de/portfolio/01-bha-imitation" target="_blank"><img
+=======
+                            <a href="https://portfolio.friedemann-web.de" target="_blank"><img
+>>>>>>> 2f7a344b33a44868d8166699f710a66750066d7d
                                         class="img-fluid rounded mb-5" src="img/portfolio/b-i-a.png" alt=""></a>
                             <!-- Portfolio Modal - Text -->
                             <p class="mb-5">An amazing Page by the Folks of <a
