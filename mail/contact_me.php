@@ -1,7 +1,7 @@
 <?php
 // Check for empty fields
 if (!isset($_POST["submit"]) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    http_response_code(500);
+    http_response_code(501);
     exit();
 }
 
