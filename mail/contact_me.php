@@ -1,10 +1,5 @@
 <?php
 // Check for empty fields
-if (!isset($_POST["submit"]) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    http_response_code(501);
-    exit();
-}
-
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email = strip_tags(htmlspecialchars($_POST['email']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
@@ -18,6 +13,4 @@ $header .= "Reply-To: $email";
 
 $send_mail = mail($to, $subject, $body, $header);
 
-if (!$send_mail)
-    http_response_code(500);
 ?>
