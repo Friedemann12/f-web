@@ -111,16 +111,16 @@
             </div>
 
             <!-- Portfolio Item 3 -->
-            <!--            <div class="col-md-6 col-lg-4">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-                            </div>
-                        </div>-->
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/cms-blog-system.png" alt="">
+                </div>
+            </div>
 
             <!-- Portfolio Item 4 -->
             <!--            <div class="col-md-6 col-lg-4">
@@ -333,25 +333,24 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-                            <a href="http://portfolio.friedemann-web.de" target="_blank"><img
-                                <a href="https://portfolio.friedemann-web.de" target="_blank"><img
-                                            class="img-fluid rounded mb-5" src="img/portfolio/b-i-a.png" alt=""></a>
-                                <!-- Portfolio Modal - Text -->
-                                <p class="mb-4">Click on the image for my Version<i class="arrow up"></i></p>
-                                <p class="mb-5">An amazing Page by the Folks of <a
-                                            href="https://www.buildinamsterdam.com/cases"
-                                            target="_blank">Build in Amsterdam</a>,
-                                    a branding agency specialised in e-commerce. I tried to imitate the
-                                    side-scrolling-effect and some of their cool features seen on their site! Made with
-                                    Javascript, Vue and CSS. All picture are free Stock-images from <a
-                                            href="https://unsplash.com/">unplash</a>. Check-out the <a
-                                            href="https://www.buildinamsterdam.com/cases"
-                                            target="_blank">original</a>.
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    Close Window
-                                </button>
+                            <a href="https://portfolio.friedemann-web.de" target="_blank"><img
+                                        class="img-fluid rounded mb-5" src="img/portfolio/b-i-a.png" alt=""></a>
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-4">Click on the image for my Version<i class="arrow up"></i></p>
+                            <p class="mb-5">An amazing Page by the Folks of <a
+                                        href="https://www.buildinamsterdam.com/cases"
+                                        target="_blank">Build in Amsterdam</a>,
+                                a branding agency specialised in e-commerce. I tried to imitate the
+                                side-scrolling-effect and some of their cool features seen on their site! Made with
+                                Javascript, Vue and CSS. All picture are free Stock-images from <a
+                                        href="https://unsplash.com/">unplash</a>. Check-out the <a
+                                        href="https://www.buildinamsterdam.com/cases"
+                                        target="_blank">original</a>.
+                            </p>
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -384,6 +383,49 @@
                             <p class="mb-4">Click on the image to read the article</p>
                             <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
                                 assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
+                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Blog and
+                                CMS-System</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <a href="portfolio/02-cms-blog-system/index.php" target="_blank"><img
+                                        class="img-fluid rounded mb-5" src="img/portfolio/cms-blog-system.png"
+                                        alt=""></a>
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-4">Click on the image to see mine</p>
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                velit
                                 asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                             <button class="btn btn-primary" href="#" data-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
