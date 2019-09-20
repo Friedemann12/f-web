@@ -1,6 +1,6 @@
 <?php
 // Check for empty fields
-if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+if (isset($_POST["send-mail"]) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     http_response_code(501);
     exit();
 }

@@ -217,7 +217,8 @@
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Name</label>
-                            <input name="name" class="form-control" id="name" type="text" placeholder="Name" required="required"
+                            <input name="name" class="form-control" id="name" type="text" placeholder="Name"
+                                   required="required"
                                    data-validation-required-message="Please enter your name.">
                             <p class="help-block text-danger"></p>
                         </div>
@@ -243,8 +244,8 @@
                     <br>
                     <div id="success"></div>
                     <div class="form-group">
-                        <button type="submit" name="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send
-                        </button>
+                        <input type="submit" name="send-mail" class="btn btn-primary btn-xl"
+                               id="sendMessageButton" value="Send">
                     </div>
                 </form>
             </div>
