@@ -98,16 +98,17 @@
             </div>
 
             <!-- Portfolio Item 2 -->
-            <!--            <div class="col-md-6 col-lg-4">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-                            </div>
-                        </div>-->
+
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/talentsblog.png" alt="">
+                </div>
+            </div>
 
             <!-- Portfolio Item 3 -->
             <!--            <div class="col-md-6 col-lg-4">
@@ -359,7 +360,6 @@
     </div>
 </div>
 
-<!-- Portfolio Modal 2
 <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
      aria-labelledby="portfolioModal2Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
@@ -373,15 +373,15 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-    Portfolio Modal - Title
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-     Icon Divider
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Talentsblog article for
+                                Deepblue</h2>
+
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
                             </div>
-                            <Portfolio Modal - Image
-                            <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
-    Portfolio Modal - Text
+                            <a href="https://www.db-n.com/talent_posts/wir-begruessen-julian/" target="_blank"><img
+                                        class="img-fluid rounded mb-5" src="img/portfolio/talentsblog.png" alt=""></a>
+                            <p class="mb-4">Click on the image to read the article</p>
                             <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
                                 assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
                                 asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
@@ -396,8 +396,6 @@
         </div>
     </div>
 </div>
-
--->
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
