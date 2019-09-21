@@ -4,8 +4,7 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -28,7 +27,6 @@
                     $cat_title = $row["cat_title"];
 
                     echo "<li><a href='category.php?category={$cat_id}'>{$cat_title}</a></li>";
-
                 }
 
 
@@ -39,7 +37,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php
 
-                if (isset($_SESSION["username"]) && $_SESSION["user_role"] === "admin") {
+                if (isset($_SESSION["username"]) && $_SESSION["user_role"] === "admin" || $_SESSION["user_role"] === "test_admin") {
 
                     echo '
                             <li>
@@ -80,7 +78,6 @@
                     echo "    <span class=\"navbar-text navbar-right\">
                             You're Logged out, See You soon!
                           </span>";
-
                 } else if ($source == "login-success") {
 
                     echo "    <span class=\"navbar-text navbar-right\">
