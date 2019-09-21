@@ -19,10 +19,10 @@
                 ?>
 
                 <input value="<?php if (isset($cat_title)) {
-                    echo $cat_title;
-                } ?>" type="text" class="form-control" name="cat_title">
+                                            echo $cat_title;
+                                        } ?>" type="text" class="form-control" name="cat_title">
 
-            <?php }
+        <?php }
         } ?>
 
         <?php
@@ -42,7 +42,6 @@
             if (!$update_query) {
                 die("Update aborted" . mysqli_error($con));
             }
-
         }
 
         ?>
@@ -50,7 +49,9 @@
 
     </div>
     <div class="form-group">
-        <input class="btn btn-primary" type="submit" name="update" value="Update Category">
+        <input class="btn btn-primary" type="submit" name="update" value="Update Category" <?php if ($_SESSION["user_role"] != "admin") {
+                                                                                                echo "disabled";
+                                                                                            } ?>>
     </div>
 
 </form>

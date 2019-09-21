@@ -67,8 +67,8 @@ if (isset($_POST["create_user"])) {
         <input id="confirm_password" type="password" required="required" placeholder="confirm password">
 
         <script>
-            var password = document.getElementById("password")
-                , confirm_password = document.getElementById("confirm_password");
+            var password = document.getElementById("password"),
+                confirm_password = document.getElementById("confirm_password");
 
             function validatePassword() {
                 if (password.value != confirm_password.value) {
@@ -89,6 +89,8 @@ if (isset($_POST["create_user"])) {
     </div>
 
 
-    <div class="form-group"><input class="btn btn-primary" type="submit" name="create_user" value="Create User"></div>
+    <div class="form-group"><input class="btn btn-primary" type="submit" name="create_user" value="Create User" <?php if ($_SESSION["user_role"] != "admin") {
+                                                                                                                    echo "disabled";
+                                                                                                                } ?>></div>
 
 </form>

@@ -30,7 +30,6 @@ if (isset($_POST["edit-user"])) {
     } else {
         $_SESSION["user_role"] = "$user_role";
         header("Location: users.php?source=success-updating");
-
     }
 }
 
@@ -53,6 +52,8 @@ if (isset($_POST["edit-user"])) {
         </select>
     </div>
 
-    <div class="form-group"><input class="btn btn-primary" type="submit" name="edit-user" value="Edit User"></div>
+    <div class="form-group"><input class="btn btn-primary" type="submit" name="edit-user" value="Edit User" <?php if ($_SESSION["user_role"] != "admin") {
+                                                                                                                echo "disabled";
+                                                                                                            } ?>></div>
 
 </form>
