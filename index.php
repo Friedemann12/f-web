@@ -418,7 +418,7 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-                            <a href="portfolio.friedemann-web.de" target="_blank"><img
+                            <a href="./portfolio/02-cms-blog-system" target="_blank"><img
                                         class="img-fluid rounded mb-5" src="img/portfolio/cms-blog-system.png"
                                         alt=""></a>
                             <!-- Portfolio Modal - Text -->
