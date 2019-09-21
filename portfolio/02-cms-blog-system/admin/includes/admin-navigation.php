@@ -15,7 +15,7 @@
         echo '  
         <ul class="nav navbar-nav navbar-center">
             <li>
-        <h4>With your current Userrole, you are not able to edit/delete oder add something!</h4>
+        <h4 class="navbar-text">With your current Userrole, you are not able to edit/delete oder add something!</h4>
             </li>
         </ul>';
     }
