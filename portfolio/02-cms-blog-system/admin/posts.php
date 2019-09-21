@@ -30,7 +30,7 @@
 
                         switch ($source) {
                             case 'add-post';
-                                include "portfolio\02-cms-blog-system\admin\includes\add-post.php";
+                                include "add-post.php";
                                 break;
                             case 'edit-post';
                                 include "includes/edit-post.php";
