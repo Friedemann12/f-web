@@ -67,6 +67,8 @@ if (isset($_POST["create_post"])) {
     </div>
 
 
-    <div class="form-group"><input class="btn btn-primary" type="submit" name="create_post" value="Publish Post"></div>
+    <div class="form-group"><input class="btn btn-primary" type="submit" name="create_post" value="Publish Post" <?php if ($_SESSION["user_role"] != "admin") {
+                                                                                                                        echo "disabled";
+                                                                                                                    } ?>></div>
 
 </form>
