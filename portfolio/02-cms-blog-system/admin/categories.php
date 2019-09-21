@@ -34,9 +34,9 @@
                                 <input type="text" class="form-control" name="cat_title">
                             </div>
                             <div class="form-group">
-                                <input class="btn btn-primary" type="submit" name="submit" value="Add Category"> <?php if ($_SESSION["user_role"] != "admin") {
-                                                                                                                        echo "disabled";
-                                                                                                                    } ?>
+                                <input class="btn btn-primary" type="submit" name="submit" value="Add Category" <?php if ($_SESSION["user_role"] != "admin") {
+                                                                                                                    echo "disabled";
+                                                                                                                } ?>>
                             </div>
 
                         </form>
