@@ -52,7 +52,7 @@ if (isset($_POST["create_user"])) {
         <label for="user_role">User Role</label>
         <select name="user_role">
             <option>user</option>
-            <option>subscriber</option>
+            <option>test_admin</option>
             <option>admin</option>
         </select>
     </div>
