@@ -61,7 +61,7 @@
             echo "<td>{$cat_title}</td>";
 
         }
-        echo "<td ><img width = '100' src = '$post_img' </td > ";
+        echo "<td ><img width = '100' src = '../$post_img' </td > ";
         echo "<td > $post_tags</td > ";
         echo "<td> $post_view_count</td>";
         echo "<td > $post_com_count</td > ";
