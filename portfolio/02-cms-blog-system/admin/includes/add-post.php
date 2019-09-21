@@ -1,5 +1,4 @@
 <?php
-include "functions.php";
 if (isset($_POST["create_post"])) {
     $post_title = escape($_POST["post_title"]);
     $post_author = escape($_POST["post_author"]);
