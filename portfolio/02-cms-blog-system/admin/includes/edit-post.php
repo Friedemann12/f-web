@@ -44,7 +44,7 @@ if (isset($_POST["edit-post"])) {
             }
         }*/
 
-    $img_dir = "../images/$post_img";
+    $img_dir = "images/$post_img";
 
     $query = "UPDATE posts SET ";
     $query .= "post_title = '{$post_title}', ";

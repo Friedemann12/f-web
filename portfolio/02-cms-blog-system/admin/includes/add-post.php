@@ -19,7 +19,7 @@ if (isset($_POST["create_post"])) {
 
     move_uploaded_file($post_img_temp, "../images/$post_img");
 
-    $img_dir = "../images/$post_img";
+    $img_dir = "images/$post_img";
 
     $query = "INSERT INTO posts(post_cat_id, post_title, post_author, post_date, post_img, post_content, post_tags, post_com_count) ";
     $query .= "VALUES('{$post_cat_id}','{$post_title}','{$post_author}','{$post_date}','{$img_dir}','{$post_content}','{$post_tags}','{$post_com_count}')";
