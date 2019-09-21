@@ -46,9 +46,9 @@
                 echo "<td><a href='comments.php?unapprove-comment=$comment_id'>Unapprove</a></td> ";
                 echo "<td><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href='comments.php?delete=$comment_id'>Delete</a></td> ";
             } else { }
-            echo "<td><a href='comments.php?approve-comment=$comment_id' disabled>Approve</a></td> ";
-            echo "<td><a href='comments.php?unapprove-comment=$comment_id'disabled>Unapprove</a></td> ";
-            echo "<td><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href='comments.php?delete=$comment_id' disabled>Delete</a></td> ";
+            echo "<td><p href='comments.php?approve-comment=$comment_id' disabled>Approve</p></td> ";
+            echo "<td><p href='comments.php?unapprove-comment=$comment_id'disabled>Unapprove</p></td> ";
+            echo "<td><p onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href='comments.php?delete=$comment_id' disabled>Delete</p></td> ";
         }
         ?>
 
