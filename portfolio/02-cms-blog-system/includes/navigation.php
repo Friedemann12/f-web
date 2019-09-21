@@ -43,7 +43,7 @@
 
                     echo '
                             <li>
-                                <a href = "./logout.php">
+                                <a href = "includes/logout.php">
                                 <span class="glyphicon glyphicon-log-out"></span>
                                 <span>Logout</span>
                                 </a>
