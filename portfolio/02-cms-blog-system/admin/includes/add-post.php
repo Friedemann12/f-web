@@ -2,7 +2,7 @@
 
 include "functions.php";
 
-if (isset($_POST["create_post"])) {
+if (isset($_POST["create-post"])) {
     $post_title = escape($_POST["post_title"]);
     $post_author = escape($_POST["post_author"]);
     $post_cat_id = escape($_POST["post_cat_id"]);
