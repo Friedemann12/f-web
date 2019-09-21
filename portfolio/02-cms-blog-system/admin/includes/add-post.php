@@ -15,7 +15,7 @@ if (isset($_POST["create_post"])) {
     $query = "INSERT INTO posts(post_cat_id, post_title, post_author, post_date, post_img, post_content, post_tags, post_com_count) ";
     $query .= "VALUES('{$post_cat_id}','{$post_title}','{$post_author}','{$post_date}','{$img_dir}','{$post_content}','{$post_tags}','{$post_com_count}')";
     $create_post_query = mysqli_query($con, $query);
-    // global $create_post_query;
+    global $create_post_query;
     if (!$create_post_query) {
         die("NO post created " . mysqli_error($con));
     } else {
