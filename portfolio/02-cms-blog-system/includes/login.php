@@ -27,7 +27,7 @@ if (isset($_POST['login'])) {
         $db_user_role = $row['user_role'];
 
 
-        if (password_verify($password, $db_user_password) && $db_user_role == "admin" && $db_user_role == "test_admin") {
+        if (password_verify($password, $db_user_password) && $db_user_role == "admin" || $db_user_role == "test_admin") {
 
             $_SESSION['username'] = $db_username;
             $_SESSION['firstname'] = $db_user_firstname;
