@@ -69,13 +69,13 @@
             if ($_SESSION["user_role"] === "admin") {
                 echo "<td><a onclick=\"javascript: return confirm('Are you Sure you want to reset the view-count?');\" href='posts.php?source=reset-views&p_id=$post_id'> Reset</a></td>";
             } else {
-                echo "<td><p onclick=\"javascript: return confirm('Are you Sure you want to reset the view-count?');\" href='posts.php?source=reset-views&p_id=$post_id' disabled> Reset</p></td>";
+                echo "<td><p> Reset</p></td>";
             }
             echo "<td ><a href = 'posts.php?source=edit-post&p_id=$post_id' > Edit</a ></td > ";
             if ($_SESSION["user_role"] === "admin") {
                 echo "<td ><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href = 'posts.php?delete=$post_id' > Delete</a ></td > ";
             } else {
-                echo "<td ><p onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href = 'posts.php?delete=$post_id'> Delete</p></td > ";
+                echo "<td ><p> Delete</p></td > ";
             }
             echo "</tr > ";
         }

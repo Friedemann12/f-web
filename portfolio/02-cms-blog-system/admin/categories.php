@@ -2,7 +2,7 @@
 
 
 
-    <div id="wrapper">
+<div id="wrapper">
 
     <!-- Navigation -->
 
@@ -34,7 +34,9 @@
                                 <input type="text" class="form-control" name="cat_title">
                             </div>
                             <div class="form-group">
-                                <input class="btn btn-primary" type="submit" name="submit" value="Add Category">
+                                <input class="btn btn-primary" type="submit" name="submit" value="Add Category"> <?php if ($_SESSION["user_role"] != "admin") {
+                                                                                                                        echo "disabled";
+                                                                                                                    } ?>
                             </div>
 
                         </form>
@@ -57,20 +59,20 @@
 
                         <table class="table table-hover">
                             <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Category Title</th>
-                            </tr>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Category Title</th>
+                                </tr>
                             </thead>
                             <tbody>
 
-                            <?php
-                            find_all_categories();
-                            ?>
+                                <?php
+                                find_all_categories();
+                                ?>
 
-                            <?php
-                            delete_categories();
-                            ?>
+                                <?php
+                                delete_categories();
+                                ?>
 
                             </tbody>
                         </table>
@@ -88,4 +90,4 @@
     <!-- /#page-wrapper -->
 
 
-<?php include "includes/admin-footer.php"; ?>
+    <?php include "includes/admin-footer.php"; ?>

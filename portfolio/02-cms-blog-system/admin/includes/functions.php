@@ -6,7 +6,6 @@ function escape($string)
     global $con;
 
     return mysqli_real_escape_string($con, trim(strip_tags($string)));
-
 }
 
 
@@ -31,10 +30,7 @@ function insert_categories()
                 die("Something went wrong" . mysqli_error($con));
             }
         }
-
     }
-
-
 }
 
 
@@ -59,10 +55,7 @@ function delete_categories()
         if (!$delete_query) {
             die("Deletion aborted" . mysqli_error($con));
         }
-
     }
-
-
 }
 
 function find_all_categories()
@@ -82,7 +75,11 @@ function find_all_categories()
         echo "<td>$cat_id</td>";
         echo "<td>$cat_title</td>";
         echo "<td><a href='categories.php?update={$cat_id}'>Edit</a</td>";
-        echo "<td><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href='categories.php?delete={$cat_id}'>Delete</a</td>";
+        if ($_SESSION["user_role"] === admin) {
+            echo "<td><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href='categories.php?delete={$cat_id}'>Delete</a></td>";
+        } else {
+            echo "<td><p>Delete</p></td>";
+        }
         echo "</tr>";
     }
 }
@@ -113,21 +110,16 @@ function user_online()
             if ($count == NULL) {
 
                 mysqli_query($con, "INSERT INTO users_online (session, time) VALUES ('$session', '$time')");
-
             } else {
 
                 mysqli_query($con, "UPDATE users_online SET time = '$time' WHERE session = '$session'");
-
             }
 
             $users_online = mysqli_query($con, "SELECT * FROM users_online WHERE time > '$time_out'");
 
             echo $count_user = mysqli_num_rows($users_online);
-
         }
-
     }
 }
 
 user_online();
-
