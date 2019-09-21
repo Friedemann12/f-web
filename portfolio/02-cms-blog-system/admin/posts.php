@@ -2,7 +2,7 @@
 
 
 
-    <div id="wrapper">
+<div id="wrapper">
 
     <!-- Navigation -->
 
@@ -29,7 +29,7 @@
                         }
 
                         switch ($source) {
-                            case 'add-post';
+                            case 'create-post';
                                 include "includes/add-post.php";
                                 break;
                             case 'edit-post';
@@ -69,4 +69,4 @@
     <!-- /#page-wrapper -->
 
 
-<?php include "includes/admin-footer.php"; ?>
+    <?php include "includes/admin-footer.php"; ?>
