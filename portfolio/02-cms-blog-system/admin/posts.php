@@ -30,7 +30,7 @@
 
                         switch ($source) {
                             case 'add-post';
-                                include "../includes/add-post.php";
+                                include "includes/add-post.php";
                                 break;
                             case 'edit-post';
                                 include "includes/edit-post.php";
