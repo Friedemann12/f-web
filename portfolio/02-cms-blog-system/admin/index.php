@@ -9,6 +9,7 @@ $query_a_comments = "SELECT COUNT(*) FROM comments WHERE comment_status = 'appro
 $query_u_comments = "SELECT COUNT(*) FROM comments WHERE comment_status = 'unapproved'  ";
 $query_a_users = "SELECT COUNT(*) FROM users WHERE user_role = 'admin' ";
 $query_u_users = "SELECT COUNT(*) FROM users WHERE user_role = 'user' ";
+$query_t_users = "SELECT COUNT(*) FROM users WHERE user_role = 'test_admin' ";
 
 $posts_count = mysqli_query($con, $query_posts);
 $comments_count = mysqli_query($con, $query_comments);
@@ -18,6 +19,7 @@ $a_comments_count = mysqli_query($con, $query_a_comments);
 $u_comments_count = mysqli_query($con, $query_u_comments);
 $a_user_count = mysqli_query($con, $query_a_users);
 $u_user_count = mysqli_query($con, $query_u_users);
+$t_user_count = mysqli_query($con, $query_t_users);
 
 $posts_row = mysqli_fetch_assoc($posts_count);
 $comments_row = mysqli_fetch_assoc($comments_count);
@@ -27,11 +29,12 @@ $a_com_row = mysqli_fetch_assoc($a_comments_count);
 $u_com_row = mysqli_fetch_assoc($u_comments_count);
 $a_user_row = mysqli_fetch_assoc($a_user_count);
 $u_user_row = mysqli_fetch_assoc($u_user_count);
+$t_user_row = mysqli_fetch_assoc($t_user_count);
 
 
 ?>
 
-    <div id="wrapper">
+<div id="wrapper">
 
     <!-- Navigation -->
     <?php include "includes/admin-navigation.php"; ?>
@@ -148,7 +151,9 @@ $u_user_row = mysqli_fetch_assoc($u_user_count);
             <div align="center">
 
                 <script type="text/javascript">
-                    google.charts.load('current', {'packages': ['bar']});
+                    google.charts.load('current', {
+                        'packages': ['bar']
+                    });
                     google.charts.setOnLoadCallback(drawChart);
 
                     function drawChart() {
@@ -177,8 +182,7 @@ $u_user_row = mysqli_fetch_assoc($u_user_count);
                     }
                 </script>
 
-                <div id="columnchart_material"
-                     style="width: 1100px; height: 550px;"></div>
+                <div id="columnchart_material" style="width: 1100px; height: 550px;"></div>
 
 
             </div>
@@ -191,4 +195,4 @@ $u_user_row = mysqli_fetch_assoc($u_user_count);
     <!-- /#page-wrapper -->
 
 
-<?php include "includes/admin-footer.php"; ?>
+    <?php include "includes/admin-footer.php"; ?>
