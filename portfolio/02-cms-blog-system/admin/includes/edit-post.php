@@ -110,7 +110,7 @@ if (isset($_POST["edit-post"])) {
     <div class="form-group">
         <label for="post_img">Post Image</label>
         <br>
-        <img src="<?php echo $post_img; ?>" width="350px">
+        <img src="../<?php echo $post_img; ?>" width="350px">
         <hr>
         <label>Select new Image</label>
         <input type="file" name="post_img">
