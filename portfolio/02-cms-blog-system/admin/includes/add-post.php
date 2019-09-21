@@ -14,7 +14,7 @@ if (isset($_POST["create_post"])) {
     $post_img_temp = escape($_FILES["post_img"]["tmp_name"]);
 
     $post_date = date("y-m-d");
-    $post_com_count = 4;
+    $post_com_count = $_POST["post_com_count"];
 
 
     move_uploaded_file($post_img_temp, "../images/$post_img");
@@ -47,7 +47,7 @@ if (isset($_POST["create_post"])) {
     </div>
     <div class="form-group">
         <label for="post_cat_id">Post Category</label>
-        <select name="post_cat_id" id="" value="{post_id_for_edit}">
+        <select name="post_cat_id" id="">
             <?php
             $query = "SELECT * FROM categories";
             $select_cat_id = mysqli_query($con, $query);
