@@ -65,7 +65,7 @@
         </div>
 
         <!-- Masthead Subheading -->
-        <p class="masthead-subheading font-weight-light mb-0">...and welcome to my Website</p>
+        <p class="masthead-subheading font-weight-light mb-0">...and welcome to my website</p>
 
     </div>
 </header>
@@ -182,7 +182,7 @@
                 <p class="lead">My Name is Julian Friedemann and I'm <?php
                     $time = time();
                     $age = ($time - 863442000) / 31536000;
-                    echo floor($age) ?> years old and since 2019 I'm studying Applied Computer Science at the Hamburg
+                    echo floor($age) ?> years old. Since 2019 I'm studying Applied Computer Science at the Hamburg
                     University of
                     Applied Science. Thanks to a cooperative study program, I am also working as a Web-Developer for
                     deepblue networks. </p>
