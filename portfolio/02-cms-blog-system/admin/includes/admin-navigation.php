@@ -10,6 +10,14 @@
         <a class="navbar-brand" href="index.php">SB Admin</a>
     </div>
     <!-- Top Menu Items -->
+    <?php
+    if ($_SESSION["user_role"] !== "admin") {
+        echo '  <ul class="nav navbar-center top-nav">
+        <h3>With your current Userrole, you are not able to edit/delete oder add something!</h3>
+    </ul>';
+    }
+    ?>
+
     <ul class="nav navbar-right top-nav">
         <li>
             <p class="navbar-text">Currently online: <span class="usersonline"></span></p>
@@ -18,9 +26,7 @@
             <a class="nav-link" href="../index.php">Homepage</a>
         </li>
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                        class="fa fa-user"></i><?php echo " {$_SESSION["firstname"]} {$_SESSION["lastname"]}"; ?><b
-                        class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><?php echo " {$_SESSION["firstname"]} {$_SESSION["lastname"]}"; ?><b class="caret"></b></a>
             <ul class="dropdown-menu">
                 <li>
                     <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -39,9 +45,7 @@
                 <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
             </li>
             <li>
-                <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown"><i
-                            class="fa fa-fw fa-arrows-v"></i> Posts <i
-                            class="fa fa-fw fa-caret-down"></i></a>
+                <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown"><i class="fa fa-fw fa-arrows-v"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="posts_dropdown" class="collapse">
                     <li>
                         <a href="posts.php"> View all </a>
@@ -58,9 +62,7 @@
                 <a href="comments.php"><i class="fa fa-fw fa-file"></i> Comments </a>
             </li>
             <li>
-                <a href="javascript:;" data-toggle="collapse" data-target="#users"><i
-                            class="fa fa-fw fa-arrows-v"></i> Users <i
-                            class="fa fa-fw fa-caret-down"></i></a>
+                <a href="javascript:;" data-toggle="collapse" data-target="#users"><i class="fa fa-fw fa-arrows-v"></i> Users <i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="users" class="collapse">
                     <li>
                         <a href="users.php"> View All </a>
