@@ -13,9 +13,9 @@
     <?php
     if ($_SESSION["user_role"] !== "admin") {
         echo '  
-        <ul class="nav navbar-center top-nav">
+        <ul class="nav navbar-nav navbar-center">
             <li>
-        <h3>With your current Userrole, you are not able to edit/delete oder add something!</h3>
+        <h4>With your current Userrole, you are not able to edit/delete oder add something!</h4>
             </li>
         </ul>';
     }
