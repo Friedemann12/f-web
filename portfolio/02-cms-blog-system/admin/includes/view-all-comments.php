@@ -1,51 +1,56 @@
 <table class="table table-hover">
     <thead>
-    <tr>
-        <th>Id</th>
-        <th>Author</th>
-        <th>Content</th>
-        <th>In Response to</th>
-        <th>Status</th>
-        <th>Date</th>
-    </tr>
+        <tr>
+            <th>Id</th>
+            <th>Author</th>
+            <th>Content</th>
+            <th>In Response to</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
     </thead>
     <tbody>
 
 
-    <?php
-    $query = "SELECT * FROM comments";
-    $slct_comments = mysqli_query($con, $query);
+        <?php
+        $query = "SELECT * FROM comments";
+        $slct_comments = mysqli_query($con, $query);
 
-    while ($row = mysqli_fetch_assoc($slct_comments)) {
-        $comment_id = $row['comment_id'];
-        $comment_author = $row['comment_author'];
-        $comment_content = substr($row['comment_content'], 0, 30);
-        $comment_post_id = $row['comment_post_id'];
-        $comment_status = $row['comment_status'];
-        $comment_date = $row['comment_date'];
+        while ($row = mysqli_fetch_assoc($slct_comments)) {
+            $comment_id = $row['comment_id'];
+            $comment_author = $row['comment_author'];
+            $comment_content = substr($row['comment_content'], 0, 30);
+            $comment_post_id = $row['comment_post_id'];
+            $comment_status = $row['comment_status'];
+            $comment_date = $row['comment_date'];
 
-        echo "<tr>";
-        echo "<td>$comment_id</td> ";
-        echo "<td>$comment_author</td> ";
-        echo "<td>$comment_content...</td> ";
-        $query_posts = "SELECT * FROM posts WHERE post_id = $comment_post_id ";
+            echo "<tr>";
+            echo "<td>$comment_id</td> ";
+            echo "<td>$comment_author</td> ";
+            echo "<td>$comment_content...</td> ";
+            $query_posts = "SELECT * FROM posts WHERE post_id = $comment_post_id ";
 
-        $select_post_id = mysqli_query($con, $query_posts);
+            $select_post_id = mysqli_query($con, $query_posts);
 
-        while ($row = mysqli_fetch_assoc($select_post_id)) {
-            $post_id = $row['post_id'];
-            $post_title = $row['post_title'];
+            while ($row = mysqli_fetch_assoc($select_post_id)) {
+                $post_id = $row['post_id'];
+                $post_title = $row['post_title'];
 
-            echo "<td><a href='../post.php?p_id=$post_id'>$post_title</a></td>";
+                echo "<td><a href='../post.php?p_id=$post_id'>$post_title</a></td>";
+            }
+            echo "<td>$comment_status</td> ";
+            echo "<td>$comment_date</td> ";
+
+            if ($_SESSION["user_role"] === "admin") {
+                echo "<td><a href='comments.php?approve-comment=$comment_id'>Approve</a></td> ";
+                echo "<td><a href='comments.php?unapprove-comment=$comment_id'>Unapprove</a></td> ";
+                echo "<td><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href='comments.php?delete=$comment_id'>Delete</a></td> ";
+            } else { }
+            echo "<td><a href='comments.php?approve-comment=$comment_id' disabled>Approve</a></td> ";
+            echo "<td><a href='comments.php?unapprove-comment=$comment_id'disabled>Unapprove</a></td> ";
+            echo "<td><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href='comments.php?delete=$comment_id' disabled>Delete</a></td> ";
         }
-        echo "<td>$comment_status</td> ";
-        echo "<td>$comment_date</td> ";
-        echo "<td><a href='comments.php?approve-comment=$comment_id'>Approve</a></td> ";
-        echo "<td><a href='comments.php?unapprove-comment=$comment_id'>Unapprove</a></td> ";
-        echo "<td><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href='comments.php?delete=$comment_id'>Delete</a></td> ";
-
-    }
-    ?>
+        ?>
 
 
     </tbody>
@@ -68,9 +73,7 @@ if (isset($_GET["delete"])) {
         die("Could not delete this post" . mysqli_error($con));
     } else {
         header("Location: comments.php?source=success-deletion");
-
     }
-
 }
 
 if (isset($_GET["approve-comment"])) {
@@ -86,9 +89,7 @@ if (isset($_GET["approve-comment"])) {
         die("Query Failed, please try again" . mysqli_error($con));
     } else {
         header("Location: comments.php?source=success-approving");
-
     }
-
 }
 
 
@@ -105,9 +106,7 @@ if (isset($_GET["unapprove-comment"])) {
         die("Query Failed, please try again" . mysqli_error($con));
     } else {
         header("Location: comments.php?source=success-unapproving");
-
     }
-
 }
 
 ?>
