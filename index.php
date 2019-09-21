@@ -333,7 +333,7 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-                            <a href="https://portfolio.friedemann-web.de" target="_blank"><img
+                            <a href="https://portfolio.friedemann-web.de/01-bha-imitation" target="_blank"><img
                                         class="img-fluid rounded mb-5" src="img/portfolio/b-i-a.png" alt=""></a>
                             <!-- Portfolio Modal - Text -->
                             <p class="mb-4">Click on the image for my Version<i class="arrow up"></i></p>
@@ -418,7 +418,7 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-                            <a href="https://portfolio.friedemann-web.de/../02-cms-blog-system/index.php" target="_blank"><img
+                            <a href="https://portfolio.friedemann-web.de/02-cms-blog-system/index.php" target="_blank"><img
                                         class="img-fluid rounded mb-5" src="img/portfolio/cms-blog-system.png"
                                         alt=""></a>
                             <!-- Portfolio Modal - Text -->
