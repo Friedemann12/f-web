@@ -48,7 +48,7 @@ if (isset($_POST["edit-user"])) {
         <label for="user_role">Post Author</label>
         <select name="user_role">
             <option>user</option>
-            <option>subscriber</option>
+            <option>test-admin</option>
             <option>admin</option>
         </select>
     </div>
