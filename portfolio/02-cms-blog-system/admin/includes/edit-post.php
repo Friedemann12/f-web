@@ -1,40 +1,38 @@
 <?php
+if (isset($_GET["p_id"])) {
 
-if ($_SESSION["user_role"]) {
-    if (isset($_GET["p_id"])) {
-
-        $post_id_for_edit = escape($_GET["p_id"]);
+    $post_id_for_edit = escape($_GET["p_id"]);
 
 
-        $query = "SELECT * FROM posts WHERE post_id = {$post_id_for_edit}";
-        $slct_posts_by_id = mysqli_query($con, $query);
+    $query = "SELECT * FROM posts WHERE post_id = {$post_id_for_edit}";
+    $slct_posts_by_id = mysqli_query($con, $query);
 
-        while ($row = mysqli_fetch_assoc($slct_posts_by_id)) {
-            $post_id = $row["post_id"];
-            $post_author = $row['post_author'];
-            $post_title = $row['post_title'];
-            $post_cat_id = $row['post_cat_id'];
-            $post_status = $row['post_status'];
-            $post_img = $row['post_img'];
-            $post_tags = $row['post_tags'];
-            $post_content = $row["post_content"];
-        }
+    while ($row = mysqli_fetch_assoc($slct_posts_by_id)) {
+        $post_id = $row["post_id"];
+        $post_author = $row['post_author'];
+        $post_title = $row['post_title'];
+        $post_cat_id = $row['post_cat_id'];
+        $post_status = $row['post_status'];
+        $post_img = $row['post_img'];
+        $post_tags = $row['post_tags'];
+        $post_content = $row["post_content"];
     }
+}
 
-    if (isset($_POST["edit-post"])) {
+if (isset($_POST["edit-post"])) {
 
-        $post_author = escape($_POST['post_author']);
-        $post_title = escape($_POST['post_title']);
-        $post_cat_id = escape($_POST['post_cat_id']);
-        $post_status = escape($_POST['post_status']);
-        $post_img = escape($_FILES["post_img"]["name"]);
-        $post_img_temp = escape($_FILES["post_img"]["tmp_name"]);
-        $post_tags = escape($_POST['post_tags']);
-        $post_content = escape($_POST["post_content"]);
+    $post_author = escape($_POST['post_author']);
+    $post_title = escape($_POST['post_title']);
+    $post_cat_id = escape($_POST['post_cat_id']);
+    $post_status = escape($_POST['post_status']);
+    $post_img = escape($_FILES["post_img"]["name"]);
+    $post_img_temp = escape($_FILES["post_img"]["tmp_name"]);
+    $post_tags = escape($_POST['post_tags']);
+    $post_content = escape($_POST["post_content"]);
 
-        move_uploaded_file($post_img_temp, "../images/$post_img");
+    move_uploaded_file($post_img_temp, "../images/$post_img");
 
-        /*    if (empty($post_img)) {
+    /*    if (empty($post_img)) {
             $query = "SELECT * FROM posts WHERE post_id = $post_id_for_edit ";
             $select_img = mysqli_query($con, $query);
 
@@ -45,31 +43,28 @@ if ($_SESSION["user_role"]) {
             }
         }*/
 
-        $img_dir = "images/$post_img";
+    $img_dir = "images/$post_img";
 
-        $query = "UPDATE posts SET ";
-        $query .= "post_title = '{$post_title}', ";
-        $query .= "post_cat_id = '{$post_cat_id}', ";
-        $query .= "post_date = now(), ";
-        $query .= "post_author = '{$post_author}', ";
-        $query .= "post_status = '{$post_status}', ";
-        $query .= "post_tags = '{$post_tags}', ";
-        if (!empty($post_img)) {
-            $query .= "post_img = '{$img_dir}', ";
-        }
-        $query .= "post_content = '{$post_content}' ";
-        $query .= "WHERE post_id = {$post_id_for_edit} ";
-
-        $update_post = mysqli_query($con, $query);
-
-        if (!$update_post) {
-            die("Updating failed " . mysqli_error($con));
-        } else {
-            header("Location: posts.php?source=success-updating");
-        }
+    $query = "UPDATE posts SET ";
+    $query .= "post_title = '{$post_title}', ";
+    $query .= "post_cat_id = '{$post_cat_id}', ";
+    $query .= "post_date = now(), ";
+    $query .= "post_author = '{$post_author}', ";
+    $query .= "post_status = '{$post_status}', ";
+    $query .= "post_tags = '{$post_tags}', ";
+    if (!empty($post_img)) {
+        $query .= "post_img = '{$img_dir}', ";
     }
+    $query .= "post_content = '{$post_content}' ";
+    $query .= "WHERE post_id = {$post_id_for_edit} ";
 
-    echo "You are not able to edit something, with your current user role!";
+    $update_post = mysqli_query($con, $query);
+
+    if (!$update_post) {
+        die("Updating failed " . mysqli_error($con));
+    } else {
+        header("Location: posts.php?source=success-updating");
+    }
 }
 
 ?>
