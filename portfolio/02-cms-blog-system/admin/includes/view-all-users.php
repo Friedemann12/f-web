@@ -38,7 +38,7 @@
             if ($_SESSION["user_role"] === "admin") {
                 echo "<td ><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href = 'users.php?delete=$user_id' > Delete</a ></td > ";
             } else {
-                echo "<td ><a onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href = 'users.php?delete=$user_id' disabled> Delete</a ></td > ";
+                echo "<td ><p onclick=\"javascript: return confirm('Are you Sure you want to delete?');\" href = 'users.php?delete=$user_id' disabled> Delete</p ></td > ";
             }
             echo "</tr > ";
         }
