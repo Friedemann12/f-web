@@ -12,9 +12,12 @@
     <!-- Top Menu Items -->
     <?php
     if ($_SESSION["user_role"] !== "admin") {
-        echo '  <ul class="nav navbar-center top-nav">
+        echo '  
+        <ul class="nav navbar-center top-nav">
+            <li>
         <h3>With your current Userrole, you are not able to edit/delete oder add something!</h3>
-    </ul>';
+            </li>
+        </ul>';
     }
     ?>
 
