@@ -396,7 +396,7 @@
     </div>
 </div>
 
-<!-- Portfolio Modal 1 -->
+<!-- Portfolio Modal 3 -->
 <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
      aria-labelledby="portfolioModal3Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
@@ -418,7 +418,7 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-                            <a href="portfolio/02-cms-blog-system/index.php" target="_blank"><img
+                            <a href="https://portfolio.friedemann-web.de/../02-cms-blog-system/index.php" target="_blank"><img
                                         class="img-fluid rounded mb-5" src="img/portfolio/cms-blog-system.png"
                                         alt=""></a>
                             <!-- Portfolio Modal - Text -->
