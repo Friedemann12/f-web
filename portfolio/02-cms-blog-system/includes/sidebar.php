@@ -56,7 +56,7 @@
 
         </form>
         <br>
-        <p> Not yet a User ? Click her to <a href = "sing-up.php"> Sing up </a></p>
+        <p> Not yet a User ? Click here to <a href = "sing-up.php"> Sing up </a></p>
     </div>
 ';
     }
