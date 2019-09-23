@@ -381,9 +381,7 @@
                             <a href="https://www.db-n.com/talent_posts/wir-begruessen-julian/" target="_blank"><img
                                         class="img-fluid rounded mb-5" src="img/portfolio/talentsblog.png" alt=""></a>
                             <p class="mb-4">Click on the image to read the article</p>
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <p class="mb-5">My introduction text for the deepblue talentsblog.  </p>
                             <button class="btn btn-primary" href="#" data-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
                                 Close Window
