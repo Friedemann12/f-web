@@ -1,6 +1,6 @@
 <?php
 
-
+if ($_SESSION["user_role"] === "admin"){
 if (isset($_POST["create_user"])) {
     $username = escape($_POST["username"]);
     $user_password = escape($_POST["user_password"]);
@@ -28,7 +28,7 @@ if (isset($_POST["create_user"])) {
         header("Location: users.php?source=success-creating");
     }
 }
-
+}
 
 ?>
 

@@ -1,4 +1,5 @@
 <?php
+if ($_SESSION["user_role"] === "admin"){
 if (isset($_POST["create_post"])) {
     $post_title = escape($_POST["post_title"]);
     $post_author = escape($_POST["post_author"]);
@@ -20,6 +21,7 @@ if (isset($_POST["create_post"])) {
     } else {
         header("Location: posts.php?source=success-posting");
     }
+}
 }
 ?>
 
