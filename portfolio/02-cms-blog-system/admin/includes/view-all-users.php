@@ -51,7 +51,7 @@
 
 <?php
 
-
+if ($_SESSION["user_role"] === "admin"){
 if (isset($_GET["delete"])) {
 
     $user_id_delete = escape($_GET["delete"]);
@@ -67,5 +67,5 @@ if (isset($_GET["delete"])) {
         header("Location: users.php?source=success-deletion");
     }
 }
-
+}
 ?>

@@ -13,7 +13,7 @@ function insert_categories()
 {
     global $con;
 
-
+    if ($_SESSION["user_role"] === "admin"){
     if (isset($_POST['submit'])) {
 
         $cat_title = escape($_POST["cat_title"]);
@@ -32,6 +32,7 @@ function insert_categories()
         }
     }
 }
+}
 
 
 function delete_categories()
@@ -39,7 +40,7 @@ function delete_categories()
     global $con;
 
     //DELETE QUERY
-
+    if ($_SESSION["user_role"] === "admin"){
     if (isset($_GET["delete"])) {
 
         echo '<script></script>';
@@ -56,6 +57,7 @@ function delete_categories()
             die("Deletion aborted" . mysqli_error($con));
         }
     }
+}
 }
 
 function find_all_categories()

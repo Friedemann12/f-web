@@ -15,6 +15,7 @@ if (isset($_GET["u_id"])) {
         $user_image = $row['user_image'];
     }
 }
+if ($_SESSION["user_role"] === "admin"){
 
 if (isset($_POST["edit-user"])) {
     $user_role = escape($_POST['user_role']);
@@ -32,7 +33,7 @@ if (isset($_POST["edit-user"])) {
         header("Location: users.php?source=success-updating");
     }
 }
-
+}
 ?>
 
 

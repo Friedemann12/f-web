@@ -28,6 +28,7 @@
         <?php
 
         // UPDATE QUERY
+        if ($_SESSION["user_role"] === "admin"){
 
         if (isset($_POST["update"])) {
 
@@ -43,7 +44,7 @@
                 die("Update aborted" . mysqli_error($con));
             }
         }
-
+    }
         ?>
 
 
