@@ -47,7 +47,7 @@
         </div>
     </nav>
 
-<section>
+    <header class="masthead bg-primary text-white text-center">
 
 <h1 class="masthead-heading text-uppercase mb-0">Impressum</h1>
 
@@ -57,7 +57,7 @@ Osterstraße 173, 20255 Hamburg<br>
 Email: Julian@friedemann-web.de<br>
 </div>
 
-</section>
+    </header>
 
     <!-- Footer -->
     <footer class="footer text-center">
