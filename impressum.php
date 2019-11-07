@@ -51,8 +51,8 @@
 
 <h1 class="masthead-heading text-uppercase mb-0">Impressum</h1>
 
-<div>
-<p class="lead mb-0"><br>Julian Friedemann<br>
+<div class="container d-flex align-items-center flex-column">
+<p class="masthead-subheading font-weight-light mb-0"><br>Julian Friedemann<br>
 Osterstraße 173, 20255 Hamburg<br>
 Email: Julian@friedemann-web.de<br>
 </div>
