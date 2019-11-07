@@ -285,7 +285,7 @@
     <!-- Copyright Section -->
     <section class="copyright py-4 text-center text-white">
         <div class="container">
-            <small>Julian Friedemann - Portfolio</small>
+            <small>Julian Friedemann - Portfolio - <a href="./impressum.php">Impressum</small>
         </div>
     </section>
 
